@@ -911,6 +911,29 @@ section,
   }
 }
 
+.leaf {
+	width: 20px;
+	height: 20px;
+	border-radius: 0 100px;
+	background-color: #1f801f;
+	transform: rotate(0deg);
+}
+.leaf-rotate{
+  transform: rotate(90deg);
+}
+.leaf-container{
+  transform: rotate(-50deg);
+  top: -10px; left: -10px;
+  opacity: 0;
+  transition: transform 800ms ease;
+  
+}
+.show-up-leaf:hover .leaf-container{
+  opacity: 1;
+  transform: rotate(-20deg);
+}
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/

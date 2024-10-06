@@ -1728,6 +1728,7 @@ section,
 /*--------------------------------------------------------------
 # Faq 2 Section
 --------------------------------------------------------------*/
+
 .faq-2 .faq-container {
   margin-top: 15px;
 }
@@ -1811,7 +1812,11 @@ section,
 }
 
 .faq-2 .faq-container .faq-active .faq-toggle {
-  transform: rotate(90deg);
+  color: var(--orange-primary);
+  transform: rotate(360deg)
+}
+.fa-carrot{
+  margin-top: 10px;
   color: var(--accent-color);
 }
 

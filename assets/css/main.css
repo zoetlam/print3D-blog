@@ -1,38 +1,34 @@
 /* Fonts */
+@font-face {
+  font-family: futura-extra;
+  src: url(../fonts/futura-extra.ttf);
+}
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Jost", sans-serif;
+  --heading-font: futura-extra;
   --nav-font: "Poppins", sans-serif;
 }
-@font-face {
-  font-family: fontsname;
-  src: url(../fonts/);
-}
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  /* --heading-color: #37517e; Color for headings, subheadings and title throughout the website */
   --heading-color: #ffa42e; /* Color for headings, subheadings and title throughout the website */
-  /* --accent-color: #47b2e4; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --accent-color: #8fd14f; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  --orange-primary: #ffa42e;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff; /* The default color of the main navmenu links */
-  /* --nav-hover-color: #47b2e4; Applied to main navmenu links when they are hovered over or active */
   --nav-hover-color: #444444; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  /* --nav-dropdown-hover-color: #47b2e4; Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
   --nav-dropdown-hover-color: #001f3f; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -44,9 +40,9 @@
 }
 
 .dark-background {
-  --background-color: #37517e;
+  --background-color: #0b192c;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #ffa42e;
   --surface-color: #4668a2;
   --contrast-color: #ffffff;
 }
@@ -218,106 +214,6 @@ h6 {
     color: var(--nav-hover-color);
   }
 
-  .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    left: 14px;
-    top: 130%;
-    opacity: 0;
-    transition: 0.3s;
-    border-radius: 4px;
-    z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .navmenu .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .dropdown:hover > ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -90%;
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown:hover > ul {
-    opacity: 1;
-    top: 0;
-    left: -100%;
-    visibility: visible;
-  }
-
-  .navmenu .megamenu {
-    position: static;
-  }
-
-  .navmenu .megamenu ul {
-    margin: 0;
-    padding: 10px;
-    background: var(--nav-dropdown-background-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 130%;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    transition: 0.3s;
-    border-radius: 4px;
-    z-index: 99;
-  }
-
-  .navmenu .megamenu ul li {
-    flex: 1;
-  }
-
-  .navmenu .megamenu ul li a,
-  .navmenu .megamenu ul li:hover > a {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .megamenu ul li a:hover,
-  .navmenu .megamenu ul li .active,
-  .navmenu .megamenu ul li .active:hover {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .megamenu:hover > ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
   .navmenu .dd-box-shadow {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
@@ -402,27 +298,6 @@ h6 {
     transform: rotate(180deg);
   }
 
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown > .dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
-  }
-
   .mobile-nav-active {
     overflow: hidden;
   }
@@ -454,6 +329,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
+  --heading-font: "Jost", sans-serif;
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
@@ -518,13 +394,14 @@ h6 {
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type="submit"]:hover, .scroll-top:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover,
+.scroll-top:hover {
   transform: scale(1.1);
   color: var(--nav-dropdown-color);
   font-weight: bold;
 }
 
-.scroll-top:hover i{
+.scroll-top:hover i {
   color: var(--nav-dropdown-color);
 }
 
@@ -804,6 +681,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  --default-color: #ffff;
   width: 100%;
   min-height: 80vh;
   position: relative;
@@ -821,6 +699,7 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  color: var(--default-color);
 }
 
 .hero p {
@@ -885,13 +764,13 @@ section,
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 1.3rem;
     line-height: 24px;
     margin-bottom: 30px;
+    color: var(--contrast-color);
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .hero .btn-get-started,{
     font-size: 13px;
   }
 }
@@ -906,27 +785,32 @@ section,
   }
 }
 
-.leaf-container{
+.leaf-container {
   color: #1f801f;
   top: -15px;
   opacity: 0;
   transition: transform 800ms ease;
 }
-.show-up-leaf:hover .leaf-container{
+.show-up-leaf:hover .leaf-container {
   opacity: 1;
 }
-#hero .fa-seedling{
+#hero .fa-seedling {
   padding: 0 10px;
-  animation:PlantShake 3s infinite linear;
-  transform-origin:bottom;
+  animation: PlantShake 3s infinite linear;
+  transform-origin: bottom;
 }
 
-@keyframes PlantShake{
-	0% {transform:skewX(10deg)}
-	50% {transform:skewX(-10deg)}
-	100% {transform:skewX(10deg)}
+@keyframes PlantShake {
+  0% {
+    transform: skewX(10deg);
+  }
+  50% {
+    transform: skewX(-10deg);
+  }
+  100% {
+    transform: skewX(10deg);
+  }
 }
-
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -1295,10 +1179,9 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   color: var(--orange-primary);
-  transform: rotate(360deg)
+  transform: rotate(360deg);
 }
-.faq .fa-carrot{
+.faq .fa-carrot {
   margin-top: 10px;
   color: var(--accent-color);
 }
-

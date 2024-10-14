@@ -776,7 +776,7 @@ section,
     color: var(--contrast-color);
   }
 
-  .hero .btn-get-started,{
+  .hero .btn-get-started{
     font-size: 13px;
   }
 }

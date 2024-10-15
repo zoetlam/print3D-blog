@@ -1153,7 +1153,7 @@ section,
 }
 
 .faq .faq-container .faq-active .faq-toggle {
-  color: var(--orange-primary);
+  color: var(--heading-color);
   transform: rotate(360deg);
 }
 .faq .fa-carrot {

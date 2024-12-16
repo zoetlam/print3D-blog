@@ -680,7 +680,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 5px 0 30px 0;
   font-size: 22px;
   line-height: 1.3;
@@ -692,7 +692,7 @@ section,
   background: var(--nav-dropdown-color);
   font-family: var(--small-title);
   font-weight: 500;
-  font-size: 15px;
+  font-size: var(--main-font-size);
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 12px 28px;

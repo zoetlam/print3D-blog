@@ -82,6 +82,18 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
+   * Zalo button
+   */
+  let zalo = document.querySelector("#zalo");
+  function zaloShowUp(){
+    if (zalo) {
+      window.scrollY > 100 ? zalo.classList.add('active') : zalo.classList.remove('active');
+    }
+  }
+  window.addEventListener('load', zaloShowUp);
+  document.addEventListener('scroll', zaloShowUp);
+  
+  /**
    * Animation on scroll function and init
    */
   function aosInit() {

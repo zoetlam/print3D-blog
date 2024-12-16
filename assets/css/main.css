@@ -90,7 +90,12 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
+.desktop-none{
+  display: none;
+}
+.mobile-none{
+  display: block;
+}
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -332,6 +337,12 @@ h6 {
   .mobile-nav-active .navmenu > ul {
     display: block;
   }
+  .desktop-none{
+    display: block;
+  }
+  .mobile-none{
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -529,6 +540,7 @@ h6 {
   transition: all 0.4s;
 }
 
+
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
@@ -539,6 +551,23 @@ h6 {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
+}
+
+#zalo{
+  position: fixed;
+  right: 20px;
+  opacity: 0;
+  z-index: 99999;
+  transition: all 0.4s;
+}
+#zalo img{
+  width: 40px;
+  height: 40px;
+}
+#zalo.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 80px;
 }
 
 /*--------------------------------------------------------------

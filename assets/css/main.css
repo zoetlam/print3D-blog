@@ -67,7 +67,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: var(--small-title);
 }
 
 a {
@@ -89,6 +89,9 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+}
+.text-justify {
+  text-align: justify;
 }
 .desktop-none{
   display: none;
@@ -269,7 +272,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: var(--small-title);
     font-size: var(--main-font-size);
     font-weight: 500;
     display: flex;
@@ -344,6 +347,17 @@ h6 {
   .mobile-none{
     display: none;
   }
+  footer{
+    text-align: center;
+  }
+  .footer-about a, .social-links, .footer-links ul {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-links ul li{
+    padding: 0 10px!important;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -443,6 +457,11 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+}
+.footer-contact span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: var(--heading-color);
 }
 
 /*--------------------------------------------------------------
@@ -884,18 +903,19 @@ section,
   transition: 0.3s;
 }
 
-.shipping .shipping-item h3 {
+.shipping .shipping-item h2 {
   font-weight: 700;
+  font-size: 2rem;
 }
 
-.shipping .shipping-item h3 a {
+.shipping .shipping-item h2 a {
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
 }
 
 .shipping .shipping-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -903,11 +923,10 @@ section,
   transform: translateY(-10px);
 }
 
-.shipping .shipping-item:hover h4 a {
-  color: var(--accent-color);
-}
-.shipping-item h3{
-  font-family: var(--small-title);
+.shipping-item h2{
+  font-family: var(--nav-font);
+  text-transform: capitalize;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -1107,4 +1126,26 @@ section,
 }
 .faq-item h3{
   font-family: var(--small-title);
+}
+/* Pushable button */
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
 }

@@ -90,6 +90,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+p{
+  line-height: 30px;
+}
 .text-justify {
   text-align: justify;
 }
@@ -621,7 +624,6 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
   position: relative;
 }
 
@@ -804,25 +806,28 @@ section,
 --------------------------------------------------------------*/
 .about {
   background-color: #F8FAFC;
+  font-size: 1.1rem;
 }
 .about ul {
   list-style: none;
-  padding: 0;
+  padding:0;
 }
 .about h2{
   font-size: 2.5rem;
 }
 
 .about ul li {
-  padding-bottom: 5px;
+  padding: 10px 0;
   display: flex;
   align-items: center;
 }
 
 .about ul i {
-  font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
+}
+.about .fa-seedling {
+  animation: PlantShake 3s infinite linear;
 }
 
 .about .read-more {
@@ -838,6 +843,7 @@ section,
   align-items: center;
   justify-content: center;
   border: 2px solid var(--accent-color);
+  margin: 30px 0 100px;
 }
 
 .about .read-more i {
@@ -856,6 +862,7 @@ section,
   transform: translate(5px, 0);
 }
 
+
 /*--------------------------------------------------------------
 #about-2 Section
 --------------------------------------------------------------*/
@@ -865,7 +872,7 @@ section,
 }
 
 #about-2 .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
   font-size: 1.1rem;
 }
 
@@ -914,7 +921,7 @@ section,
 }
 
 .shipping .shipping-item p {
-  line-height: 24px;
+  line-height: 30px;
   font-size: 18px;
   margin-bottom: 0;
 }

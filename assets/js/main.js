@@ -209,6 +209,19 @@
           false
         );
       });
+      document.querySelectorAll(".footer-services a").forEach(function (footerLink) {
+        footerLink.addEventListener("click", function () {
+          // Get the filter value from the footer link
+          let filterValue = this.getAttribute("data-filter");
+    
+          // Find the matching filter button
+          isotopeItem.querySelectorAll(".isotope-filters li").forEach(function (filterButton) {
+            if (filterButton.getAttribute("data-filter") === filterValue) {
+              filterButton.click(); // Simulate a click on the filter button
+            }
+          });
+        });
+      });
   });
 
   /**

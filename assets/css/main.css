@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
   font-family: fontNeutra;
-  src: url(../fonts/Neutra.ttf) format("woff2");
+  src: url(../fonts/Neutra.ttf) format('woff2');
 }
 
 @font-face {
   font-family: font-ganh;
-  src: url(../fonts/Ganh-Regular.otf) format("woff2");
+  src: url(../fonts/Ganh-Regular.otf) format('woff2');
 }
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -16,6 +16,7 @@
   --nav-font: "Poppins", sans-serif;
   --small-title: font-ganh;
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
@@ -89,16 +90,16 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-p {
+p{
   line-height: 30px;
 }
 .text-justify {
   text-align: justify;
 }
-.desktop-none {
+.desktop-none{
   display: none;
 }
-.mobile-none {
+.mobile-none{
   display: block;
 }
 
@@ -343,24 +344,23 @@ p {
   .mobile-nav-active .navmenu > ul {
     display: block;
   }
-  .desktop-none {
+  .desktop-none{
     display: block;
   }
-  .mobile-none {
+  .mobile-none{
     display: none;
   }
-  footer {
+  footer{
     text-align: center;
   }
-  .footer-about a,
-  .social-links,
-  .footer-links ul {
+  .footer-about a, .social-links, .footer-links ul {
     display: flex;
     justify-content: center;
   }
-  .footer-links ul li {
-    padding: 0 10px !important;
+  .footer-links ul li{
+    padding: 0 10px!important;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -396,7 +396,7 @@ p {
   width: 50px;
   height: 50px;
   font-size: 16px;
-  color: #1877f2;
+  color: #1877F2;
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -461,8 +461,8 @@ p {
 .footer .footer-contact p {
   margin-bottom: 5px;
 }
-.footer-contact span {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.footer-contact span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
   color: var(--heading-color);
 }
@@ -519,6 +519,7 @@ p {
   transition: all 0.4s;
 }
 
+
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
@@ -531,20 +532,19 @@ p {
   bottom: 15px;
 }
 
-#zalo {
+#zalo{
   position: fixed;
   right: 20px;
   opacity: 0;
   z-index: 99999;
   transition: all 0.4s;
 }
-#zalo img,
-.zalo img {
+#zalo img, .zalo img{
   width: 40px;
   height: 40px;
 }
 
-.zalo:hover {
+.zalo:hover{
   filter: hue-rotate(313deg);
 }
 
@@ -759,7 +759,7 @@ section,
     color: var(--contrast-color);
   }
 
-  .hero .btn-get-started {
+  .hero .btn-get-started{
     font-size: 13px;
   }
 }
@@ -805,14 +805,14 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   font-size: 1.1rem;
 }
 .about ul {
   list-style: none;
-  padding: 0;
+  padding:0;
 }
-.about h2 {
+.about h2{
   font-size: 2.5rem;
 }
 
@@ -861,6 +861,7 @@ section,
 .about .read-more:hover i {
   transform: translate(5px, 0);
 }
+
 
 /*--------------------------------------------------------------
 #about-2 Section
@@ -929,11 +930,12 @@ section,
   transform: translateY(-10px);
 }
 
-.shipping-item h2 {
+.shipping-item h2{
   font-family: var(--small-title);
   text-transform: capitalize;
   text-align: center;
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1130,7 +1132,7 @@ section,
   margin-top: 10px;
   color: var(--accent-color);
 }
-.faq-item h3 {
+.faq-item h3{
   font-family: var(--small-title);
 }
 /* Pushable button */
@@ -1151,10 +1153,14 @@ section,
   color: white;
   transform: translateY(-6px);
 }
-.pushable:hover .front {
+.pushable:hover .front{
   transform: translateY(-8px);
 }
 
 .pushable:active .front {
   transform: translateY(-2px);
 }
+
+
+
+

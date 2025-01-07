@@ -123,6 +123,7 @@
    */
   function aosInit() {
     AOS.init({
+      offset: 250, // Trigger animations 200px before the element is in view
       duration: 600,
       easing: "ease-in-out",
       once: true,

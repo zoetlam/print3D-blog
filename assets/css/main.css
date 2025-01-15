@@ -351,6 +351,7 @@ p{
     display: none;
   }
   footer{
+    margin-top: 100px;
     text-align: center;
   }
   .footer-about a, .social-links, .footer-links ul {

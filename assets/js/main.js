@@ -123,7 +123,7 @@
    */
   function aosInit() {
     AOS.init({
-      offset: 250, // Trigger animations 200px before the element is in view
+      offset: 200, // Trigger animations 200px before the element is in view
       duration: 600,
       easing: "ease-in-out",
       once: true,
@@ -270,3 +270,13 @@
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
+
+const print3D = document.querySelectorAll(".print-three-d");
+const resin = document.querySelectorAll(".print-resin");
+function hiddenDiv(value){
+  value.forEach(element => {
+    element.classList.add("d-none");
+  })
+}
+hiddenDiv(print3D);
+hiddenDiv(resin);
